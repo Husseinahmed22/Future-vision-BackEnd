@@ -4,12 +4,21 @@ namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+// use Laravel\Passport\HasApiTokens;
+use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
 
 
-     use Notifiable;
+    // protected $table = 'users';
+
+    // public function collage()
+    // {
+    //     return $this->belongsTo(Collage::class);
+    // }
+
+
+     use HasApiTokens , Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -19,20 +28,26 @@ class User extends Authenticatable
     protected $fillable = [
         // 'college_id',
         // 'uni_id',
-        'name',
+        'firstname',
+        'lastname',
         'email',
         'password',
+        "gender",
         'img',
-        'department',
-        "totalPercentage",
         "location",
         "birth",
+        'department',
+        "Philosophymark",
+        "historymark",
+        "psychologymark",
+        "geologymark",
+        "thirdlangmark",
         "arabicMark",
         "physicsMark",
         "mathMark",
         "chemistryMark",
-        "englishMark"
-
+        "englishMark",
+        "totalPercentage",
     ];
 
     /**
@@ -55,5 +70,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-
+    // protected function setPasswordAttribute($password){
+    //     $this->attributes['password'] = bcrypt($password);
+    // }
 }

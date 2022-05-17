@@ -23,17 +23,24 @@ class CreateUsersTable extends Migration
             // $table->unsignedInteger('university_id');
             // $table->foreign('university_id')->references('id')->on('universities');
 
-            $table->string('name');
+            $table->string('firstname');
+            $table->string('lastname');
             $table->string('email');
             $table->string('password');
-            $table->string('img')->nullable();
+            $table->enum('gender',array('Male','Female'));    
+            $table->binary('img')->nullable();
             $table->string('location');
             $table->date('birth');
             $table->enum('department',array('scientific','literary'));
+            $table->float('Philosophymark')->nullable();
+            $table->float('historymark')->nullable();
+            $table->float('psychologymark')->nullable();
+            $table->float('geologymark')->nullable();
+            $table->float('thirdlangmark');
             $table->float('arabicMark');
-            $table->float('physicsMark');  
-            $table->float('mathMark');     
-            $table->float('chemistryMark');
+            $table->float('physicsMark')->nullable();  
+            $table->float('mathMark')->nullable();     
+            $table->float('chemistryMark')->nullable();
             $table->float('englishMark');
             $table->float('totalPercentage');
 

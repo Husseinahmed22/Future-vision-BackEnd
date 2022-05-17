@@ -18,7 +18,7 @@ use App\Http\Controllers\UniversityController;
 
 
 // Route::group([
-    
+
 //         'prefix' => 'auth'
 
 // ], function() {
@@ -29,15 +29,15 @@ use App\Http\Controllers\UniversityController;
 
 
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('_auth')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('register',[UserController::class, 'register']);
-Route::post('login',[UserController::class, 'login']);
-Route::get('list',[UniversityController::class, 'list']);
+Route::post('register', [UserController::class, 'register']);
+Route::post('login', [UserController::class, 'login']);
+Route::get('list', [UniversityController::class, 'list']);
 Route::get('Questionlist', 'QuestionsController@Questionlist');
+Route::get('create', [UniversityController::class, 'create']);
+Route::get('pivotTable', [UniversityController::class, 'pivotTable']);
 
-
-
-
+Route::middleware('auth:api')->post('logout', [UserController::class, 'logout']);

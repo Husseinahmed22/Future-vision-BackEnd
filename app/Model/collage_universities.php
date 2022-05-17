@@ -4,7 +4,7 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CollageUniversity extends Model
+class collage_universities extends Model
 {
     protected $guarded = [];
 }

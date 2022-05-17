@@ -23,7 +23,6 @@ class OptionsSeeder extends Seeder
         Options::create([
 
             'value'=>'No',
-            'is_correct'=>'0',
             'question_id'=>'1'
 
         ]);
@@ -41,7 +40,6 @@ class OptionsSeeder extends Seeder
         Options::create([
 
             'value'=>'No',
-            'is_correct'=>'0',
             'question_id'=>'2'
 
         ]);
@@ -59,7 +57,6 @@ class OptionsSeeder extends Seeder
         Options::create([
 
             'value'=>'No',
-            'is_correct'=>'0',
             'question_id'=>'3'
 
         ]);
@@ -71,7 +68,6 @@ class OptionsSeeder extends Seeder
         Options::create([
 
             'value'=>'Put ice on it',
-            'is_correct'=>'0',
             'question_id'=>'4'
 
         ]);
@@ -88,7 +84,6 @@ class OptionsSeeder extends Seeder
         Options::create([
 
             'value'=>'wrap it in cotton',
-            'is_correct'=>'0',
             'question_id'=>'4'
 
         ]);
@@ -96,7 +91,6 @@ class OptionsSeeder extends Seeder
         Options::create([
 
             'value'=>'leave it in the open air',
-            'is_correct'=>'0',
             'question_id'=>'4'
 
         ]);

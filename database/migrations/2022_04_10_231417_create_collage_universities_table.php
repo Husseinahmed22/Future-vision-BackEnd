@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 class CreateCollageUniversitiesTable extends Migration
 {
@@ -14,6 +15,8 @@ class CreateCollageUniversitiesTable extends Migration
     public function up()
     {
         Schema::create('collage_universities', function (Blueprint $table) {
+            $table->Increments('id');
+
             $table->integer('collage_id')->unsigned()->nullable();
                 
             $table->foreign('collage_id')->references('id')
@@ -23,6 +26,7 @@ class CreateCollageUniversitiesTable extends Migration
         
                 $table->foreign('uni_id')->references('id')
                     ->on('universities')->onUpdate('cascade')->onDelete('set null');
+                    
         });
     }
 

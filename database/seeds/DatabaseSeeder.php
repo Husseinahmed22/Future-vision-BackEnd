@@ -15,6 +15,9 @@ class DatabaseSeeder extends Seeder
         $this->call(UniversitySeeder::class);
         $this->call(QuestionsSeeder::class);
         $this->call(OptionsSeeder::class);
+        $this->call(PivotTableSeeder::class);
+
+
 
 
     }

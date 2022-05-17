@@ -13,7 +13,8 @@ class QuestionsSeeder extends Seeder
     public function run()
     {
 
-        ///////////////////////////////
+        ////////////Nursing///////////////////
+
 
         Questions::create(
             [
@@ -56,7 +57,7 @@ class QuestionsSeeder extends Seeder
 
 
 
-///////////////////////////////////////////////
+//////////////////Physical Therapy/////////////////////////////
 
         Questions::create(
             [
@@ -99,7 +100,7 @@ class QuestionsSeeder extends Seeder
 
 
 
-////////////////////////////////////
+////////////////Engineering////////////////////
 
         
         Questions::create(
@@ -144,7 +145,7 @@ class QuestionsSeeder extends Seeder
 
 
 
-///////////////////////////////////
+/////////////Medicine//////////////////////
         
         
         Questions::create(
@@ -186,11 +187,11 @@ class QuestionsSeeder extends Seeder
             ]
         );
 
-////////////////////////////////////////
+////////////////Computer and Information////////////////////////
 
         Questions::create(
             [
-                'type'=>' Computer and Information',
+                'type'=>'Computer and Information',
                 'body'=>' Have you ever write code before?',
                 'collage_id'=>'12'
             ]
@@ -198,14 +199,14 @@ class QuestionsSeeder extends Seeder
 
         Questions::create(
             [
-                'type'=>' Computer and Information',
+                'type'=>'Computer and Information',
                 'body'=>'What is IOT stand for?',
                 'collage_id'=>'12'
             ]
         );
         Questions::create(
             [
-                'type'=>' Computer and Information',
+                'type'=>'Computer and Information',
                 'body'=>'Are you interested in programming?',
                 'collage_id'=>'12'
             ]
@@ -213,7 +214,7 @@ class QuestionsSeeder extends Seeder
 
         Questions::create(
             [
-                'type'=>' Computer and Information',
+                'type'=>'Computer and Information',
                 'body'=>'Do you have information about AI?',
                 'collage_id'=>'12'
             ]
@@ -221,13 +222,13 @@ class QuestionsSeeder extends Seeder
 
         Questions::create(
             [
-                'type'=>' Computer and Information',
+                'type'=>'Computer and Information',
                 'body'=>'Do you like video games?',
                 'collage_id'=>'12'
             ]
         );
 
-        ////////////////////////////
+        ///////////Law/////////////////
 
 
 
@@ -271,7 +272,7 @@ class QuestionsSeeder extends Seeder
         );
 
 
-        /////////////////////////
+        ///////////Agriculture//////////////
 
 
 
@@ -306,7 +307,7 @@ class QuestionsSeeder extends Seeder
             ]
         );
 
-        /////////////////////////////
+        /////////////Veterinary Medicine////////////////
 
 
         Questions::create(
@@ -348,7 +349,7 @@ class QuestionsSeeder extends Seeder
             ]
         );
 
-        ////////////////////////////
+        ////////////Sciences////////////////
 
 
               Questions::create(
@@ -390,7 +391,7 @@ class QuestionsSeeder extends Seeder
                 ]
             );
 
-            ///////////////////////////
+            ////////////Dentistry///////////////
 
             
             Questions::create(
@@ -433,7 +434,7 @@ class QuestionsSeeder extends Seeder
             );
 
 
-            ///////////////////////////
+            ///////////Pharmacy////////////////
 
 
             Questions::create(
@@ -475,7 +476,7 @@ class QuestionsSeeder extends Seeder
                 ]
             );
 
-            //////////////////////////////////
+            //////////////Commerce////////////////////
 
 
             Questions::create(
@@ -518,7 +519,7 @@ class QuestionsSeeder extends Seeder
             );
 
 
-            //////////////////////////////////////////////////
+            /////////////////////Politics and Economics/////////////////////////////
 
         
             Questions::create(
@@ -560,7 +561,7 @@ class QuestionsSeeder extends Seeder
                 ]
             );
 
-            //////////////////////////
+            ////////////Media//////////////
 
 
             
@@ -604,7 +605,7 @@ class QuestionsSeeder extends Seeder
                 ]
             );
             
-            //////////////////////////
+            ///////////Applied Arts///////////////
 
             Questions::create(
                 [
@@ -685,7 +686,7 @@ class QuestionsSeeder extends Seeder
                 ]
             );
 
-            /////////////////////////////////////
+            ////////////////Literature/////////////////////
 
 
 
