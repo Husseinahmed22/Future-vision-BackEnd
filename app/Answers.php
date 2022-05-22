@@ -14,9 +14,4 @@ class Answers extends Model
     {
         return $this->belongsTo(options::class);
     }
-
-    public function collage()
-    {
-        return $this->belongsTo(Collage::class);
-    }
 }

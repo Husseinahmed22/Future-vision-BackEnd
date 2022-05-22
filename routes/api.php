@@ -36,8 +36,13 @@ Route::middleware('_auth')->get('/user', function (Request $request) {
 Route::post('register', [UserController::class, 'register']);
 Route::post('login', [UserController::class, 'login']);
 Route::get('list', [UniversityController::class, 'list']);
-Route::get('Questionlist', 'QuestionsController@Questionlist');
+Route::get('GetQuestion', 'QuestionsController@GetQuestion');
+Route::get('GetOptions', 'OptionsController@GetOptions');
 Route::get('create', [UniversityController::class, 'create']);
 Route::get('pivotTable', [UniversityController::class, 'pivotTable']);
 
 Route::middleware('auth:api')->post('logout', [UserController::class, 'logout']);
+
+Route::get('Collages' , [UniversityController::class, 'Getcollages']);
+Route::post('UploadProfilePic' , [UserController::class, 'UploadProfilePic']);
+

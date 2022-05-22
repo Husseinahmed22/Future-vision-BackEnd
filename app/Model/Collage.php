@@ -2,23 +2,29 @@
 
 namespace App\Model;
 
-use App\model\questions;
+use App\model\Questions;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Collage extends Model
 {
+    protected $guarded = ['id'];
 
-    // protected $table = 'collages';
+    protected $table = 'collages';
 
-    // public function users()
-    // {
-    //     return $this->hasMany(User::class);
-    // }
+    protected $fillable = [ 'name' ];
 
-    public function question()
+
+
+    public function university()
     {
-        return $this->hasMany(questions::class);
+        return $this->belongsToMany(universities::class);
+    }
+
+    public function Question()
+    {
+        return $this->hasMany(Questions::class);
+
     }
 
 

@@ -15,5 +15,8 @@ class universities extends Model
         'university_image',
     ];
 
-
+    public function collage()
+    {
+        return $this->belongsToMany(Collage::class);
+    }
 }

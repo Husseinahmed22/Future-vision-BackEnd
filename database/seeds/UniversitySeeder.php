@@ -13,38 +13,38 @@ class UniversitySeeder extends Seeder
     public function run()
     {
         universities::create([
-            'name'  => 'Nahda University',
+            'name'  => 'Nahda',
             'location' => 'Beni Suef',
-            'university_image'=> '../UniPics/Nahda-University.jpg',
+            'university_image'=> 'Nahda-University.jpg',
         ]);
 
         universities::create([
-            'name'  => 'French University',
+            'name'  => 'French',
             'location' => 'El-Sherouk city',
-            'university_image'=> '../UniPics/French-University.jpg',
+            'university_image'=> 'French-University.jpg',
         ]);
 
         universities::create([
-            'name'  => 'Nile University',
+            'name'  => 'Nile',
             'location' => 'Giza',
-            'university_image'=> '../UniPics/Nile-University.jpg',
+            'university_image'=> 'Nile-University.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'New Mansoura University',
+            'name'  => 'New Mansoura',
             'location' => 'New Mansoura',
             'university_image'=> '../UniPics/New-Mansoura-University.png',
         ]);
 
         universities::create([
-            'name'  => 'Pharos University',
+            'name'  => 'Pharos',
             'location' => 'Alexandria',
             'university_image'=> '../UniPics/Pharos-University.jpg',
         ]);
 
         universities::create([
-            'name'  => 'Sinai University',
+            'name'  => 'Sinai',
             'location' => 'Sinai',
             'university_image'=> '../UniPics/Sinai-University.jpg',
 
@@ -52,14 +52,14 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'MTI University',
+            'name'  => 'MTI',
             'location' => 'Cairo',
             'university_image'=> '../UniPics/MTI-University.jpg',
         ]);
 
 
         universities::create([
-            'name'  => 'BUE University',
+            'name'  => 'BUE',
             'location' => 'Cairo',
             'university_image'=> '../UniPics/BUE-University.jpg',
 
@@ -67,7 +67,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'ACU University',
+            'name'  => 'ACU',
             'location' => 'October City',
             'university_image'=> '../UniPics/ACU-University.jpg',
 
@@ -75,7 +75,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Misr University',
+            'name'  => 'Misr',
             'location' => 'October City',
             'university_image'=> '../UniPics/Misr-University.jpg',
 
@@ -83,14 +83,14 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'MSA University',
+            'name'  => 'MSA',
             'location' => 'Cairo',
             'university_image'=> '../UniPics/MSA-University.jpg',
         ]);
 
 
         universities::create([
-            'name'  => 'October 6 University',
+            'name'  => 'October 6',
             'location' => 'October City',
             'university_image'=> '../UniPics/October-6-University.jpg',
 
@@ -98,7 +98,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Delta University',
+            'name'  => 'Delta',
             'location' => 'Mansoura',
             'university_image'=> '../UniPics/Delta-University.png',
 
@@ -106,7 +106,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Egyptian Chinese',
+            'name'  => 'Egyptian',
             'location' => 'Cairo',
             'university_image'=> '../UniPics/Egyptian-Chinese.jpg',
 
@@ -114,7 +114,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Horus University',
+            'name'  => 'Horus',
             'location' => 'New Damietta',
             'university_image'=> '../UniPics/Horus-University.jpg',
 
@@ -130,7 +130,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Future University',
+            'name'  => 'Future',
             'location' => 'New Cairo',
             'university_image'=> '../UniPics/Future-University.jpg',
 
@@ -138,7 +138,7 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Heliopolis University',
+            'name'  => 'Heliopolis',
             'location' => 'El Salam City',
             'university_image'=> '../UniPics/Heliopolis-University.jpg',
 
@@ -154,77 +154,77 @@ class UniversitySeeder extends Seeder
 
 
         universities::create([
-            'name'  => 'Badr University',
+            'name'  => 'Badr',
             'location' => 'Cairo',
             'university_image'=> '../UniPics/Badr-University.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'Galala University',
+            'name'  => 'Galala',
             'location' => 'Suez',
             'university_image'=> '../UniPics/Galala-University.png',
 
         ]);
 
         universities::create([
-            'name'  => 'Al-Alamein International',
+            'name'  => 'Al-Alamein',
             'location' => 'New Mansoura',
             'university_image'=> '../UniPics/Al-Alamein-International.jpeg',
 
         ]);
 
         universities::create([
-            'name'  => 'King Salman',
+            'name'  => 'King',
             'location' => 'Sinai',
             'university_image'=> '../UniPics/King-Salman.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'Sphinx University',
+            'name'  => 'Sphinx',
             'location' => 'New Assiut City',
             'university_image'=> '../UniPics/Sphinx.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'Merit University',
+            'name'  => 'Merit',
             'location' => 'Sohag',
             'university_image'=> '../UniPics/merit.jpeg',
 
         ]);
 
         universities::create([
-            'name'  => 'Al-Salam University',
+            'name'  => 'Al-Salam',
             'location' => 'Gharbia',
             'university_image'=> '../UniPics/Al-Salam.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'New Giza University',
+            'name'  => 'New Giza',
             'location' => 'New Giza',
             'university_image'=> '../UniPics/New-Giza-University.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'Deraya University',
+            'name'  => 'Deraya',
             'location' => 'New Minya',
             'university_image'=> '../UniPics/Deraya-University.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'MIU University',
+            'name'  => 'MIU',
             'location' => 'Qalyubiyya',
             'university_image'=> '../UniPics/MIU-University.jpg',
 
         ]);
 
         universities::create([
-            'name'  => 'GUC University',
+            'name'  => 'GUC',
             'location' => 'New Cairo',
             'university_image'=> '../UniPics/GUC-University.jpg',
 

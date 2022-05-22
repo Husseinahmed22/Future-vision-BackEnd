@@ -4,11 +4,25 @@ namespace App\Http\Controllers;
 
 use App\Questions;
 use Illuminate\Http\Request;
+use Symfony\Component\Console\Question\Question;
+use Illuminate\Support\Facades\DB;
+
 
 class QuestionsController extends Controller
 {
-    function Questionlist()
+
+    public function GetQuestion(Request $req)
     {
-        return Questions::all();
+        $quiz = Questions::all();
+
+        return $quiz;
     }
+
+    public function index()
+    {
+        $users = DB::table('users')->get();
+ 
+    }
+
+
 }

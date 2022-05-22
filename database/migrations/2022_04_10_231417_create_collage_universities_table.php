@@ -26,6 +26,8 @@ class CreateCollageUniversitiesTable extends Migration
         
                 $table->foreign('uni_id')->references('id')
                     ->on('universities')->onUpdate('cascade')->onDelete('set null');
+
+                    $table->timestamps();
                     
         });
     }

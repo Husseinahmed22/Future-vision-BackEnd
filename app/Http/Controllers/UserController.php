@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\UploadProfileRequest;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Support\Facades\Auth;
@@ -11,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Session;
 use Dotenv\Validator;
 use App\User;
+use Illuminate\Contracts\Validation\Validator as ValidationValidator;
 
 class UserController extends Controller
 {
@@ -28,7 +30,8 @@ class UserController extends Controller
     {
         $req->validate([
             'email' => 'required',
-            'password' => 'required|string|'
+            'password' => 'required|string|',
+            'img' => 'nullable|image',
         ]);
 
         $credentials = request(['email', 'password']);
@@ -48,5 +51,20 @@ class UserController extends Controller
         $response = ['Message' => 'You Have successfully logout!!'];
 
         return response($response, 200);
+    }
+
+    public function UploadProfilePic(UploadProfileRequest $req)
+    {
+        if (auth('sanctum')->user()) {
+            $user = User::find(auth('sanctum')->user()->id);
+            if ($req->img) {
+                $file_name = time() . '.' . $req->img->extension();
+                $req->img->move(public_path('UniPics/' . $user->id . '/'),$file_name);
+                $user->img = $file_name;
+                $user['img'] = asset("UniPics/{$user->id}/{$user['img']}");
+                return response()->json(['Status' => 'True', 'Message' => 'Profile Updated!', 'data' => $user]);
+            }
+            return response()->json(['Status' => 'False', 'Message' => 'Something Wants Wrong!', 'data' => []], 500);
+        }
     }
 }
