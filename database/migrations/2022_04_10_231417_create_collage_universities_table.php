@@ -19,13 +19,13 @@ class CreateCollageUniversitiesTable extends Migration
 
             $table->integer('collage_id')->unsigned()->nullable();
                 
-            $table->foreign('collage_id')->references('id')
-                ->on('collages')->onUpdate('cascade')->onDelete('set null');
+            // $table->foreign('collage_id')->references('id')
+            //     ->on('collages')->onUpdate('cascade')->onDelete('set null');
 
                 $table->integer('uni_id')->unsigned()->nullable();
         
-                $table->foreign('uni_id')->references('id')
-                    ->on('universities')->onUpdate('cascade')->onDelete('set null');
+                // $table->foreign('uni_id')->references('id')
+                //     ->on('universities')->onUpdate('cascade')->onDelete('set null');
 
                     $table->timestamps();
                     

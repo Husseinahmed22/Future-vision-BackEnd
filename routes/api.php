@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExamsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -46,3 +47,6 @@ Route::middleware('auth:api')->post('logout', [UserController::class, 'logout'])
 Route::get('Collages' , [UniversityController::class, 'Getcollages']);
 Route::post('UploadProfilePic' , [UserController::class, 'UploadProfilePic']);
 
+Route::get('exams',[ExamsController::class,'index']);
+Route::get('exams/{id}',[ExamsController::class,'show']);
+Route::post('exam-answers',[ExamsController::class,'examAnswers']);

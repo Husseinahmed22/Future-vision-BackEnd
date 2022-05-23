@@ -14,11 +14,11 @@ class CreateQuestionsTable extends Migration
     public function up()
     {
         Schema::create('questions', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('type');
-            $table->text('body');
-            $table->unsignedInteger('collage_id');
-            $table->foreign('collage_id')->references('id')->on('collages');
+            $table->id();
+            $table->unsignedBigInteger('exam_id');
+            $table->unsignedBigInteger('collage_id');
+            $table->string('question');
+            $table->string('answers');
             $table->timestamps();
         });
     }
